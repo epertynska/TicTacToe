@@ -1,5 +1,5 @@
 cells = ["_", "_", "_", "_", "_", "_", "_", "_", "_"]
-
+print("Welcome to TicTacToe. To place a sign,\nyou need to enter two digits divided by a space,\nfirst digit stands for row, the second stands for column. \nPlacing '1 1' commands means that you want to place\nyour sign in upper left corner.\n'1 3' means upper right and so on.\nSign 'X' starts. Good luck!")
 print(f"""
 ---------
 | {cells[0]} {cells[1]} {cells[2]} |
@@ -44,6 +44,9 @@ while i < 10:
             ---------"""
             print(grid)
             i += 1
+    else:
+        print("You should enter two numbers divided by space!")
+        continue
     ctrl_o = [o for o in cells if o == "O"]
     ctrl_x = [x for x in cells if x == "X"]
     ctrl_draw = [d for d in cells if d != "_"]
